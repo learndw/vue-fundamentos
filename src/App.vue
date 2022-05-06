@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <counter title="Primero"></counter> -->
+  <!-- <counter :start="5"></counter> -->
+  <indecision></indecision>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//import  Counter from "@/components/Counter.vue";
+import  Indecision from "@/components/Indecision.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Indecision
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  width: 250px;
+}
+
+button{
+  margin: 3px;
+  font-size: 18px;
 }
 </style>
